@@ -2,4 +2,4 @@
 str = ""
 for i in "abcdefghijklmnopqrstuvwxyz":
     str += i
-print("{0}".format(string), end="")    
+print("{0}".format(string), end="")
