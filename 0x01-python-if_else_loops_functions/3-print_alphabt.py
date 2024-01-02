@@ -4,5 +4,5 @@ for i in "abcdefghijklmnopqrstuvwxyz":
     if (i == 'e') or (i == 'q'):
         pass
     else:
-        str += 1
+        str += i
 print("{}".format(str), end="")
