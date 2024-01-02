@@ -1,1 +1,1 @@
-this repo is for python projects 
+this repository is my first steps to learn python
