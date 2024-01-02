@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 str = ""
 for i in "abcdefghijklmnopqrstuvwxyz":
     if (i == 'e') or (i == 'q'):
