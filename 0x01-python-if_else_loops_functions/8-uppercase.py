@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 def appercase(str):
-    for i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
-        if ord(str) == ord (i):
-            return True
+    string = ""
+    for i in str:
+        if i in "abcdefghijklmnopqrstuvwxyz":
+            num = ord(i) - 32
         else:
-            return False
-        
+            num = ord(i)
+            string += chr(num)
+            print("{}".format(string))
