@@ -23,7 +23,7 @@ class Square:
             if self.__size < 0:
                 raise ValueError("size must be >= 0")
 
-               @property
+    @property
     def size(self):
         """
         method to return size of Square
@@ -52,7 +52,7 @@ class Square:
 
     def my_print(self):
         """
-        method for class
+        method for class 'Square' to print '#' in stdout
         """
         if self.__size == 0:
             print("\n", end="")
@@ -60,4 +60,4 @@ class Square:
             for i in range(self.__size):
                 for j in range(self.__size):
                     print("#", end="")
-                    print()
+                print()
