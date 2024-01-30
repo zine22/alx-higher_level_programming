@@ -1,0 +1,62 @@
+Test file in text format.
+import add int from 0-add_integer.txt:
+>>> add_integer = __import__('0-add_integer').add_integer
+
+SUCCESS:
+>>> add_integer(7, 9)
+16
+
+>>> add_integer(5, 7.2)
+12
+
+>>> add_integer(5.9, 4.12)
+9
+
+>>> add_integer(7)
+105
+
+FAILS:
+>>> add_integer("h", 7)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer("3", "8")
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer(5, "hello")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+>>> add_integer(True)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer((3 + 5j), 4)
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+
+>>> add_integer(float("inf"), 4)
+Traceback (most recent call last):
+	...
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer(3, float("-inf"))
+Traceback (most recent call last):
+	...
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer(2, float("Nan"))
+Traceback (most recent call last):
+	...
+ValueError: cannot convert float NaN to integer
+
+>>> add_integer()
+Traceback (most recent call last):
+	...
+TypeError: add_integer() missing 1 required positional argument: 'a'

@@ -1,0 +1,35 @@
+File in reStructuredText format.
+import 'text_indentation' method from 5-text_indentation.py
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+SUCCESS:
+>>> text_indentation("My name is Toby. I am a software engineer")
+My name is Toby.
+<BLANKLINE>
+I am a software engineer
+
+
+FAILS:
+>>> text_indentation()
+Traceback (most recent call last):
+	...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+
+>>> text_indentation(None)					      
+Traceback (most recent call last):
+	...
+TypeError: text must be a string
+
+
+>>> text_indentation(home)
+Traceback (most recent call last):
+	...
+NameError: name 'home' is not defined
+
+
+>>> text_indentation(5.95)
+Traceback (most recent call last):
+	...
+TypeError: text must be a string
