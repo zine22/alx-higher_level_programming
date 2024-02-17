@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Func to return the dictionary description """
+""" func to return the dictionary description """
 
 def class_to_json(obj):
     """
