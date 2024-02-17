@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+""" Define read func """
+
+def read_file(filename=""):
+    """ Read filename with utf = 8 """
+    with open(filename, encoding='utf-8') as file:
+        print(file.read(), end="")
