@@ -1,4 +1,4 @@
-#!/urs/bin/python3
+#!/usr/bin/python3
 """ Func to return the dictionary description """
 
 def class_to_json(obj):
